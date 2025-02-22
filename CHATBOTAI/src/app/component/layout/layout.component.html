@@ -32,8 +32,8 @@
 		  <ul class="nav nav-secondary">
 			<li class="nav-item active">
 			  <a
+			   routerLink="/admin-bbo"
 				data-bs-toggle="collapse"
-				routerLink="/admin-bbo"
 				class="collapsed"
 				aria-expanded="false"
 			  >
@@ -42,14 +42,20 @@
 			  </a>
 			</li>
 			<li class="nav-item">
-			  <a data-bs-toggle="collapse" routerLink="/admin-bbo/role">
+				<a routerLink="/admin-bbo/user" data-bs-toggle="collapse" >
+				  <i class="fas fa-user-friends"></i>
+				  <p>User</p>
+				</a>
+			  </li>
+			<li class="nav-item">
+			  <a routerLink="/admin-bbo/role" data-bs-toggle="collapse" >
 				<i class="fas fa-user-secret"></i>
 				<p>Role</p>
 			  </a>
 			</li>
 
 			<li class="nav-item">
-			  <a data-bs-toggle="collapse" routerLink="/admin-bbo/analyst">
+			  <a  routerLink="/admin-bbo/analyst" data-bs-toggle="collapse">
 				<i class="far fa-chart-bar"></i>
 				<p>Analytics</p>
 			  </a>

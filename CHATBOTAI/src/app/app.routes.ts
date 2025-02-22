@@ -4,6 +4,7 @@ import { LayoutComponent } from './component/layout/layout.component';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { RoleComponent } from './component/role/role.component';
 import { AnalystComponent } from './component/analyst/analyst.component';
+import { UserComponent } from './component/user/user.component';
 
 
 export const routes: Routes = [
@@ -18,6 +19,7 @@ export const routes: Routes = [
 		children: [
 		  { path: '', component: DashboardComponent }, // Khi vào /admin-bbo, hiển thị Dashboard
 		  { path: 'role', component: RoleComponent },  // Khi vào /admin-bbo/role, hiển thị RoleComponent
+		  { path: 'user', component: UserComponent},
 		  { path: 'analyst', component: AnalystComponent},
 		  
 		]
